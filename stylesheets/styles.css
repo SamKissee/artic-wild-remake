@@ -91,9 +91,10 @@ header {
     margin-left: -80px; }
 
 .header-navbar {
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: 3em auto 0;
   align-items: center; }
 
@@ -156,7 +157,8 @@ header {
 nav {
   background-image: url(../img/bg-footercopyright.jpg);
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 50; }
 
 .navbar {
   width: 90%;
@@ -242,5 +244,93 @@ nav {
   justify-content: center;
   background-color: #dc7725;
   height: 5px; }
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e6e6e1; }
+
+.experience-top {
+  position: relative;
+  margin-top: 4em;
+  margin-left: 4em;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #c9c9b8; }
+  .experience-top h3 {
+    color: #85857b;
+    margin-bottom: .1em; }
+  .experience-top h1 {
+    font-size: 3em;
+    color: #343433;
+    margin-top: .3em;
+    margin-bottom: .3em; }
+  .experience-top p {
+    font-size: 1.25em;
+    color: #85857b; }
+
+.experience-text {
+  width: 50%; }
+
+.experience-absolute {
+  position: absolute;
+  top: -4em;
+  right: -43em;
+  z-index: 0; }
+
+.experience-buttons {
+  margin-top: 5em;
+  margin-bottom: 10em;
+  display: flex;
+  align-items: center;
+  height: 50px; }
+  .experience-buttons .left-button {
+    padding: 5px;
+    background-color: #dc7725;
+    color: #ffffff !important;
+    border-radius: 5px;
+    margin-right: 1em; }
+  .experience-buttons .right-button {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #85857b; }
+
+.line-experience {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  background-color: #85857b;
+  height: 5px; }
+
+.experience-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10em;
+  height: 50vh;
+  background-image: url(../img/bg-testimonials.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.experience-bottom-text {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #343433; }
+
+.clients {
+  width: 900px;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .clients img {
+    border-radius: 50%;
+    height: 60px; }
+  .clients img:nth-child(3) {
+    height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */
