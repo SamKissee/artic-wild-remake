@@ -80,9 +80,9 @@ header, section, nav, footer {
 
 header {
   background-image: url(../img/hero-slide1.jpg);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100%; }
+  background-repeat: no-repeat; }
 
 .header-logo {
   display: flex;
@@ -108,8 +108,49 @@ header {
       text-transform: uppercase; }
 
 .header-main {
+  margin-top: 8em;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #ffffff; }
+  .header-main .alaska {
+    width: 80px; }
+  .header-main .play {
+    width: 30px; }
+  .header-main .play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+  .header-main h2 {
+    margin-bottom: 10px; }
+  .header-main h1 {
+    font-size: 7em;
+    margin: 10px; }
+
+.line {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 5px;
+  margin-bottom: 2em; }
+
+.header-button {
+  margin-top: 20em;
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dc7725;
+  color: #ffffff;
+  height: 60px;
+  width: 180px; }
 
 /*# sourceMappingURL=styles.css.map */

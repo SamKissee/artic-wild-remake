@@ -3,9 +3,10 @@
 // -----------------------------------------------------------------------------
 header {
   background-image: url(../img/hero-slide1.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  // height: 100%;
 }
 
 .header-logo {
@@ -40,8 +41,52 @@ header {
 }
 
 .header-main {
-  // display: flex;
+  margin-top: 8em;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: $text-color;
+  .alaska{
+    width: 80px;
+  }
+  .play{
+    width: 30px;
+  }
+  .play-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    @include icon;
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 7em;
+    margin: 10px;
+  }
+}
+
+.line {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  background-color: $text-color;
+  height: 5px;
+  margin-bottom: 2em;
+}
+
+.header-button {
+  margin-top: 20em;
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $brand-color;
+  color: $text-color;
+  height: 60px;
+  width: 180px;
+
 }
