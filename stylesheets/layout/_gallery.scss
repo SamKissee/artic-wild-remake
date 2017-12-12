@@ -1,0 +1,66 @@
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: $text-color;
+}
+
+.gal-img{
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  flex-grow: 1;
+  flex-basis: 25%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .icon{
+    @include icon;
+    position: absolute;
+    top: 38%;
+    margin: 0 auto;
+    background-color: #2a2b29d6;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    height: 40px;
+  }
+}
+
+.gal-img-1 {
+  background-image: url(../img/home-raft.jpg);
+  flex-grow: 2;
+  flex-basis: 50%;
+  }
+.gal-img-2 {
+  background-image: url(../img/home-basecamp.jpg);
+}
+.gal-img-3 {
+  background-image: url(../img/home-backpacking.jpg);
+}
+.gal-img-4 {
+  background-image: url(../img/home-canoe.jpg);
+}
+.gal-img-5 {
+  background-image: url(../img/home-photo.jpg);
+}
+.gal-img-6 {
+  background-image: url(../img/home-custom.jpg);
+  flex-grow: 2;
+  flex-basis: 50%;
+}
+
+.line-gallery{
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  background-color: $brand-color;
+  height: 5px;
+  // margin-bottom: 2em;
+}
