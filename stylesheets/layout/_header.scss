@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+  background-image: url(../img/hero-slide1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.header-logo {
+  display: flex;
+  height: 50px;
+  .logo{
+    margin-left: -80px
+  }
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3em auto 0;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      padding: 0 10px;
+      color: $text-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.header-main {
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $text-color;
+}

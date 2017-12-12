@@ -15,6 +15,14 @@ html {
 *::after {
   box-sizing: inherit; }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+header, section, nav, footer {
+  width: 100%; }
+
 /**
  * Clear inner floats
  */
@@ -69,5 +77,39 @@ html {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+header {
+  background-image: url(../img/hero-slide1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; }
+
+.header-logo {
+  display: flex;
+  height: 50px; }
+  .header-logo .logo {
+    margin-left: -80px; }
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3em auto 0;
+  align-items: center; }
+
+.header-nav {
+  display: flex; }
+  .header-nav ul {
+    display: flex; }
+    .header-nav ul li {
+      list-style: none;
+      padding: 0 10px;
+      color: #ffffff;
+      text-transform: uppercase; }
+
+.header-main {
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
