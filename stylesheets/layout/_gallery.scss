@@ -2,6 +2,10 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: $text-color;
 }
 
@@ -63,4 +67,13 @@
   background-color: $brand-color;
   height: 5px;
   // margin-bottom: 2em;
+}
+@media (max-width: 500px) {
+  .gallery {
+    flex-direction: column;
+  }
+  .gal-img {
+    width: 100%;
+    // flex: 0;
+  }
 }

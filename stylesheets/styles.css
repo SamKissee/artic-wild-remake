@@ -191,6 +191,9 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: #ffffff; }
 
 .gal-img {
@@ -250,6 +253,12 @@ nav {
   background-color: #dc7725;
   height: 5px; }
 
+@media (max-width: 500px) {
+  .gallery {
+    flex-direction: column; }
+
+  .gal-img {
+    width: 100%; } }
 .experience {
   display: flex;
   flex-direction: column;
