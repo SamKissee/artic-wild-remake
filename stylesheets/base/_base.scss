@@ -20,7 +20,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+// body {
+//   width: 100vw;
+//   overflow: hidden;
 .wrapper {
   display: flex;
   flex-wrap: wrap;

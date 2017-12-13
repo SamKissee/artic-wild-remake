@@ -36,21 +36,30 @@ footer {
 }
 .footer-bottom {
   width: 1100px;
+  height: 30vh;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.ft-bt-left li{
+.ft-bt-left, .ft-bt-mid{
+  width: 100%
+  ul{
+  width: 100%;
+  }
+  li{
   list-style: none;
   padding: 10px 0px;
   border-bottom: .5px solid $mid-grey;
   color: $mid-grey;
+  }
 }
 
 .ft-bt-mid li{
   list-style: none;
   padding: 10px 0px;
+  width: 100%;
   border-bottom: .5px solid $mid-grey;
   color: $mid-grey;
 }
