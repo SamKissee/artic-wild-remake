@@ -259,8 +259,7 @@ nav {
   flex-direction: column;
   max-width: 1100px;
   margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #c9c9b8; }
+  margin-right: auto; }
   .experience-top h3 {
     color: #85857b;
     margin-bottom: .1em; }
@@ -307,21 +306,25 @@ nav {
   height: 5px; }
 
 .experience-bottom {
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
   padding-top: 10em;
-  height: 50vh;
   background-image: url(../img/bg-testimonials.jpg);
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #c9c9b8;
+  border-top: 2px solid #c9c9b8; }
 
 .experience-bottom-text {
+  position: relative;
   width: 900px;
   margin: 0 auto;
   text-align: center;
   color: #343433; }
 
 .clients {
+  z-index: 200;
   width: 900px;
   margin-top: 5em;
   display: flex;
@@ -332,5 +335,169 @@ nav {
     height: 60px; }
   .clients img:nth-child(3) {
     height: 100px; }
+
+.line-experience-bottom {
+  position: absolute;
+  background-color: #85857b;
+  height: 1px;
+  width: 100%;
+  top: 15em;
+  z-index: 1; }
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #e1e1db url(../img/bg-destinations.png) bottom center no-repeat; }
+
+.destination-section {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+.destination-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  text-align: center; }
+  .destination-text h3 {
+    color: #85857b;
+    margin-bottom: 0px; }
+  .destination-text h1 {
+    color: #343433;
+    margin: .15em 0;
+    font-size: 3em; }
+  .destination-text p {
+    font-size: 1.35em;
+    margin-bottom: 4em; }
+
+.line-destination {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-self: center;
+  background-color: #85857b;
+  height: 3px; }
+
+.destination-map {
+  position: relative;
+  height: 700px;
+  background: url(../img/destinations-map.png) center no-repeat; }
+
+.destination-stuff {
+  position: absolute;
+  top: 5em;
+  left: 41em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #85857b; }
+
+.destination-buttons {
+  margin-top: 1em;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .destination-buttons .dest-left {
+    flex-grow: 1;
+    padding: 5px;
+    border: solid 1px #85857b;
+    color: #85857b; }
+  .destination-buttons .dest-right {
+    flex-grow: 1;
+    padding: 5px;
+    border: solid 1px #85857b;
+    color: #dc7725; }
+
+.mountain-shit {
+  margin: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.guides {
+  background-image: url(../img/bg-guides.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex; }
+
+.guide-content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding: 5em 0;
+  justify-content: space-between; }
+
+.guide-text {
+  padding: 1em;
+  color: #c9c9b8; }
+  .guide-text h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin: 0.5em 0; }
+  .guide-text p {
+    font-size: 1.25em; }
+
+.guide-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dc7725;
+  color: #ffffff; }
+
+.footer {
+  display: flex;
+  flex-direction: column; }
+
+.footer-top {
+  background: url(../img/bg-footercopyright.jpg);
+  display: flex;
+  padding: 1em;
+  height: 12em; }
+
+.footer-top-content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-top-content h2 {
+    color: #ffffff; }
+  .footer-top-content p {
+    color: #85857b; }
+
+.ft-top-right:hover {
+  fill: #dc7725;
+  cursor: pointer; }
+
+footer {
+  background-color: #343433; }
+
+.footer-bottom {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.ft-bt-left li {
+  list-style: none;
+  padding: 10px 0px;
+  border-bottom: 0.5px solid #85857b;
+  color: #85857b; }
+
+.ft-bt-mid li {
+  list-style: none;
+  padding: 10px 0px;
+  border-bottom: 0.5px solid #85857b;
+  color: #85857b; }
 
 /*# sourceMappingURL=styles.css.map */

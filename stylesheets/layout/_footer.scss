@@ -1,3 +1,56 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  // width: 1100px;
+  background: url(../img/bg-footercopyright.jpg);
+  display: flex;
+  padding: 1em;
+  height: 12em;
+}
+
+.footer-top-content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    color: $text-color;
+  }
+  p {
+    color: $mid-grey;
+  }
+}
+.ft-top-right:hover {
+  fill: $brand-color;
+  cursor: pointer;
+}
+footer {
+  background-color: #343433;
+}
+.footer-bottom {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ft-bt-left li{
+  list-style: none;
+  padding: 10px 0px;
+  border-bottom: .5px solid $mid-grey;
+  color: $mid-grey;
+}
+
+.ft-bt-mid li{
+  list-style: none;
+  padding: 10px 0px;
+  border-bottom: .5px solid $mid-grey;
+  color: $mid-grey;
+}

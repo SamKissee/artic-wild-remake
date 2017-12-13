@@ -29,7 +29,6 @@
     font-size: 1.25em;
     color: $mid-grey;
   }
-  border-bottom: 1px solid $light-grey;
 }
 .experience-text {
   width: 50%;
@@ -72,16 +71,20 @@
 }
 
 .experience-bottom {
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
   padding-top: 10em;
-  height: 50vh;
+  // height: 50vh;
   background-image: url(../img/bg-testimonials.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: 1px solid $light-grey;
+  border-top: 2px solid $light-grey;
 }
 
 .experience-bottom-text {
+  position: relative;
   width: 900px;
   margin: 0 auto;
   text-align: center;
@@ -89,6 +92,7 @@
 }
 
 .clients {
+  z-index: 200;
   width: 900px;
   margin-top: 5em;
   display: flex;
@@ -102,4 +106,148 @@
     height: 100px;
   }
 
+}
+
+.line-experience-bottom {
+  position: absolute;
+  background-color: $mid-grey;
+  height: 1px;
+  width: 100%;
+  top: 15em;
+  z-index: 1;
+}
+
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #e1e1db url(../img/bg-destinations.png) bottom center no-repeat;
+}
+
+.destination-section {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  text-align: center;
+  h3 {
+    color: $mid-grey;
+    margin-bottom: 0px;
+  }
+  h1 {
+    color: $dark-grey;
+    margin: .15em 0;
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.35em;
+    margin-bottom: 4em;
+  }
+
+}
+
+.line-destination {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-self: center;
+  background-color: $mid-grey;
+  height: 3px;
+}
+
+.destination-map {
+  position: relative;
+  height: 700px;
+  background: url(../img/destinations-map.png) center no-repeat;
+  // margin-bottom: 10em;
+}
+
+.destination-stuff {
+  position: absolute;
+  top: 5em;
+  left: 41em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $mid-grey;
+  h4 {
+    // margin-bottom: 0;
+  }
+}
+
+.destination-buttons {
+  margin-top: 1em;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .dest-left {
+    flex-grow: 1;
+    padding: 5px;
+    border: solid 1px $mid-grey;
+    color: $mid-grey;
+  }
+  .dest-right {
+    flex-grow: 1;
+    padding: 5px;
+    border: solid 1px $mid-grey;
+    color: $brand-color;
+  }
+}
+
+.mountain-shit {
+  margin: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.guides {
+  background-image: url(../img/bg-guides.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.guide-content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding: 5em 0;
+  justify-content: space-between;
+}
+
+.guide-text {
+  padding: 1em;
+  color: $light-grey;
+  h1 {
+    color: $text-color;
+    font-size: 3em;
+    margin: .5em 0 ;
+  }
+  p {
+    font-size: 1.25em;
+  }
+}
+
+.guide-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $brand-color;
+  color: $text-color;
 }
